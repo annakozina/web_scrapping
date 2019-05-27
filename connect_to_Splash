@@ -1,0 +1,21 @@
+}
+if(!require(curl)){
+  install.packages("curl")
+  library(curl)
+}
+}
+if(!require(httr)){
+  install.packages("httr")
+  library(httr)
+}
+}
+if(!require(splashr)){
+  install.packages("splashr")
+  library(splashr)
+}
+
+
+splash_debug()
+splash_active()
+ har <- render_html(url="http://10.100.112.252:8050") 
+ print(har)
